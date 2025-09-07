@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meu Portfólio — Estrutura Básica</title>
+    <meta name="description" content="Estrutura inicial (somente HTML) de um portfólio pessoal." />
+  </head>
+  <body>
+    <!-- ===== Cabeçalho / Navegação ===== -->
+    <header>
+      <div>
+        <a href="#apresentacao" aria-label="Ir para a seção de apresentação">
+          <!-- Substitua pelo seu nome ou logotipo (sem estilos nesta etapa) -->
+          <strong>Seu Nome</strong>
+        </a>
+      </div>
+
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== Seção de Apresentação (Hero) ===== -->
+      <section id="apresentacao" aria-labelledby="titulo-apresentacao">
+        <h1 id="titulo-apresentacao">Título Profissional ou Área de Atuação</h1>
+        <!-- Opcional: inserir imagem/avata⁠r quando for aplicar estilos
+        <img src="avatar.jpg" alt="Foto de [Seu Nome]" />
+        -->
+        <p>
+          Breve frase de impacto ou resumo profissional. Ex.: "Desenvolvedor(a) Front-end focado(a) em acessibilidade e performance."
+        </p>
+      </section>
+
+      <!-- ===== Sobre Mim ===== -->
+      <section id="sobre" aria-labelledby="titulo-sobre">
+        <h2 id="titulo-sobre">Sobre Mim</h2>
+        <p>
+          Escreva um texto introdutório sobre sua trajetória, competências-chave e interesses. Destaque tecnologias, experiências relevantes e o que está buscando no momento.
+        </p>
+        <ul>
+          <li>Habilidade 1</li>
+          <li>Habilidade 2</li>
+          <li>Habilidade 3</li>
+        </ul>
+      </section>
+
+      <!-- ===== Projetos ===== -->
+      <section id="projetos" aria-labelledby="titulo-projetos">
+        <h2 id="titulo-projetos">Projetos</h2>
+
+        <!-- Repita o bloco <article> para cada projeto -->
+        <article>
+          <header>
+            <h3>Nome do Projeto 1</h3>
+          </header>
+          <!-- Espaço reservado para imagem/miniatura do projeto (opcional) -->
+          <!-- <figure>
+            <img src="thumb-projeto-1.jpg" alt="Miniatura do Projeto 1" />
+            <figcaption>Breve descrição da imagem do projeto.</figcaption>
+          </figure> -->
+          <p>
+            Breve descrição do projeto: objetivo, tecnologias utilizadas e resultado. Inclua um link para o repositório quando disponível.
+          </p>
+          <p>
+            <a href="#" rel="noopener">Ver no GitHub</a>
+            <!-- <a href="#" rel="noopener">Demo</a> -->
+          </p>
+        </article>
+
+        <article>
+          <header>
+            <h3>Nome do Projeto 2</h3>
+          </header>
+          <p>
+            Resumo do projeto 2. Destaque o papel que você desempenhou e os principais aprendizados.
+          </p>
+          <p>
+            <a href="#" rel="noopener">Ver no GitHub</a>
+          </p>
+        </article>
+      </section>
+
+      <!-- ===== Contato ===== -->
+      <section id="contato" aria-labelledby="titulo-contato">
+        <h2 id="titulo-contato">Contato</h2>
+
+        <!-- Opção A: Informações diretas de contato -->
+        <address>
+          <p>E-mail: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+          <p>LinkedIn: <a href="#" rel="noopener">linkedin.com/in/seu-usuario</a></p>
+          <p>GitHub: <a href="#" rel="noopener">github.com/seu-usuario</a></p>
+        </address>
+
+        <!-- Opção B: Formulário simples (sem backend nesta etapa) -->
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Envie uma mensagem</legend>
+
+            <div>
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" required />
+            </div>
+
+            <div>
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div>
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+
+            <div>
+              <button type="submit">Enviar</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <!-- ===== Rodapé ===== -->
+    <footer>
+      <p>
+        &copy; <span id="ano-atual">2025</span> Seu Nome. Todos os direitos reservados.
+      </p>
+      <nav aria-label="Links do rodapé">
+        <ul>
+          <li><a href="#apresentacao">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!--
+      Notas:
+      - Esta é apenas a estrutura HTML, sem estilos visuais.
+      - Em etapas futuras, adicione CSS para layout, cores e tipografia.
+      - Você pode separar o conteúdo em vários arquivos (ex.: pages/) se desejar.
+    -->
+  </body>
+</html>
