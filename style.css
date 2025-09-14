@@ -1,0 +1,240 @@
+/* ===== Reset / base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #F8F7FB; /* quase branco com leve tom frio */
+  color: #2C2C2C; /* texto escuro, leitura fácil */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  background-color: #5345A3; /* roxo uva escuro */
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+header div a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  color: #D9CFFF; /* roxo claro de destaque */
+  transform: translateY(-2px);
+}
+
+/* ===== Principal / Hero ===== */
+main {
+  margin-top: 80px; /* para compensar cabeçalho fixo */
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+#apresentacao {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #664EAA, #5345A3);
+  border-radius: 12px;
+  color: #F5F5FA;
+  margin-bottom: 4rem;
+}
+
+#apresentacao h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#apresentacao p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* ===== Sobre Mim ===== */
+#sobre h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #5345A3;
+  text-align: center;
+}
+
+#sobre p {
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  #sobre p {
+    padding: 0 3rem;
+  }
+}
+
+/* ===== Projetos ===== */
+#projetos h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #5345A3;
+  text-align: center;
+}
+
+#projetos article {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projetos article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+#projetos h3 {
+  font-family: inherit;   /* herda a fonte normal do texto */
+  font-size: 1rem;        /* tamanho igual ao parágrafo */
+  font-weight: bold;      /* deixa apenas em negrito */
+  color: inherit;         /* mesma cor do texto */
+  margin: 0;              /* remove espaçamentos extras */
+  display: inline;        /* fica na mesma linha do texto */
+}
+
+#projetos p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+#projetos a {
+  color: #5e4bb3;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+#projetos a:hover {
+  color: #8e7cd0;
+  text-decoration: underline;
+}
+
+/* ===== Contato ===== */
+#contato h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #5345A3;
+  text-align: center;
+}
+
+#contato address {
+  background: #E9E5FA; /* tom suave claro */
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contato address p {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+#contato a {
+  color: #5e4bb3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contato a:hover {
+  color: #8e7cd0;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  background-color: #5345A3;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: auto;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #D9CFFF;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  #apresentacao h1 {
+    font-size: 2.2rem;
+  }
+
+  #projetos h3 {
+    font-size: 1.5rem;
+  }
+
