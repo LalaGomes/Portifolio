@@ -1,5 +1,4 @@
-/* ===== Reset / base ===== */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,8 +11,8 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  background-color: #F8F7FB; /* quase branco com leve tom frio */
-  color: #2C2C2C; /* texto escuro, leitura fácil */
+  background-color: #F8F7FB; 
+  color: #2C2C2C;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@ body {
 
 /* ===== Cabeçalho ===== */
 header {
-  background-color: #5345A3; /* roxo uva escuro */
+  background-color: #5345A3; 
   color: #FFFFFF;
   display: flex;
   justify-content: space-between;
@@ -55,13 +54,13 @@ nav a {
 }
 
 nav a:hover {
-  color: #D9CFFF; /* roxo claro de destaque */
+  color: #D9CFFF; 
   transform: translateY(-2px);
 }
 
 /* ===== Principal / Hero ===== */
 main {
-  margin-top: 80px; /* para compensar cabeçalho fixo */
+  margin-top: 80px; 
   flex: 1;
   width: 100%;
   max-width: 1200px;
@@ -138,12 +137,12 @@ main {
 }
 
 #projetos h3 {
-  font-family: inherit;   /* herda a fonte normal do texto */
-  font-size: 1rem;        /* tamanho igual ao parágrafo */
-  font-weight: bold;      /* deixa apenas em negrito */
-  color: inherit;         /* mesma cor do texto */
-  margin: 0;              /* remove espaçamentos extras */
-  display: inline;        /* fica na mesma linha do texto */
+  font-family: inherit;   
+  font-size: 1rem;        
+  font-weight: bold;      
+  color: inherit;         
+  margin: 0;             
+  display: inline;        
 }
 
 #projetos p {
@@ -174,7 +173,7 @@ main {
 }
 
 #contato address {
-  background: #E9E5FA; /* tom suave claro */
+  background: #E9E5FA;
   padding: 2rem;
   border-radius: 12px;
   max-width: 600px;
