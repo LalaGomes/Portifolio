@@ -237,3 +237,66 @@ footer a:hover {
     font-size: 1.5rem;
   }
 }
+
+
+@media (max-width: 768px) {
+  /* ===== Cabeçalho ===== */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  header nav {
+    margin-top: 1rem;
+  }
+  
+  header nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* ===== Principal ===== */
+  main {
+    padding: 1rem;
+    margin-top: 120px;
+  }
+
+  #apresentacao {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #apresentacao h1 {
+    font-size: 2rem;
+  }
+
+  #apresentacao p {
+    font-size: 1rem;
+  }
+
+  /* ===== Sobre Mim ===== */
+  #sobre h2 {
+    font-size: 2rem;
+  }
+
+  #sobre p {
+    padding: 0;
+  }
+
+  /* ===== Projetos ===== */
+  #projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #projetos article {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ===== Contato ===== */
+  #contato h2 {
+    font-size: 2rem;
+  }
+}
