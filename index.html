@@ -1,63 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfólio — Lara Gomes</title>
-    <meta name="description" content="Estrutura inicial (somente HTML) de um portfólio pessoal." />
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div>
-        <a href="#apresentacao" aria-label="Ir para a seção de apresentação">
-          <strong>Lara Lays Gomes De Jesus</strong>
-        </a>
-      </div>
 
-      <nav aria-label="Menu principal">
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio — Lara Gomes</title>
+  <meta name="description" content="Estrutura inicial (somente HTML) de um portfólio pessoal." />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+</head>
 
-    <main>
-      <section id="apresentacao" aria-labelledby="titulo-apresentacao">
-        <h1 id="titulo-apresentacao">Tech Assistent</h1>
+<body>
+  <header>
+  <div class="logo-container">
+    <img src="img/foto-perfil.jpeg" alt="Foto de Lara Lays Gomes" class="foto-menu">
+    <a href="#apresentacao" aria-label="Ir para a seção de apresentação">
+      <strong>Lara Lays Gomes De Jesus</strong>
+    </a>
+  </div>
+
+
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="apresentacao" aria-labelledby="titulo-apresentacao">
+      <h1 id="titulo-apresentacao">Tech Assistant</h1>
+      <p>
+        Profissional de TI especializado em garantir a continuidade e eficiência das operações, oferecendo suporte
+        estratégico e soluções ágeis para a sustentação de sistemas e serviços.</p>
+    </section>
+
+    <section id="sobre" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre">Sobre Mim</h2>
+      <p>
+        Sou uma pessoa movida por desafios e oportunidades, pois acredito que cada experiência é uma forma de
+        aprendizado e crescimento.
+
+        Em 2021, mergulhei no universo da programação sem ter contato prévio com a área. Enfrentei obstáculos, persisti
+        e, em 2022, concluí o curso Web Full Stack Node na Digital House, em parceria com o Programadores do Amanhã.
+        Assim como também me formei no ensino médio no mesmo ano.
+
+        Durante essa jornada, desenvolvi habilidades em JavaScript, HTML, CSS, Banco de Dados e iniciei meu aprendizado
+        em React. Esse processo fortaleceu minhas hard skills e consolidou minha paixão pela tecnologia. Já para
+        aperfeiçoar minhas soft skills tive muita ajuda da minha mentora durante todo o curso e após ele também.
+
+        Em 2023, atuei como jovem aprendiz (fora da área de TI) em uma startup que aumentou bastande meu networking e
+        minhas habilidades de comunicação.
+        No início de 2024, conquistei meu primeiro estágio na área que sempre quis entrar e foi no Banco Inter, onde
+        entrei para atuar como desenvolvedora back-end mas não foi o mar de rosas que imaginei, por isso acabei migrando
+        para a área de sustentação, mas sem deixar de sair da TI, onde pude aplicar meus conhecimentos e ganhar
+        experiência prática. Agora em setembro de 2025, fui efetivada e atuo no cargo de Tech Assistant, contribuindo
+        diretamente para as operações e sustentação na área de TI.</p>
+    </section>
+
+    <section id="habilidades" aria-labelledby="titulo-habilidades">
+      <h2 id="titulo-habilidades">Habilidades & Tecnologias</h2>
+      <ul class="lista-habilidades">
+        <li><strong>Linguagens:</strong> JavaScript, HTML, CSS</li>
+        <li><strong>Frameworks:</strong> Node.js, React (básico)</li>
+        <li><strong>Banco de Dados:</strong> MySQL</li>
+        <li><strong>Soft Skills:</strong> Comunicação, Trabalho em equipe, Resiliência</li>
+      </ul>
+    </section>
+
+
+    <section id="projetos" aria-labelledby="titulo-projetos">
+      <h2 id="titulo-projetos">Projetos</h2>
+
+      <article>
+        <h3>Projeto Integrador Langglow - Programadores do Amanhã</h3>
         <p>
-          Profissional de TI especializado em garantir a continuidade e eficiência das operações, oferecendo suporte estratégico e soluções ágeis para a sustentação de sistemas e serviços.</p>
-      </section>
-
-      <section id="sobre" aria-labelledby="titulo-sobre">
-        <h2 id="titulo-sobre">Sobre Mim</h2>
+          O projeto consistia em criar uma loja virtual completa, para a finalização do curso. Foi feito por uma equipe
+          de cinco pessoas todas mulheres, e apelidamos de Langglow um nome único que reune a primeira letra dos nomes
+          das participantes do projeto. Fizemos tudo do zero, o desenho das páginas no figma, a estrutura do banco de
+          dados e tanto o backend e o frontend do projeto, além de criar uma conta no instagram para a lojinha.
+        </p>
         <p>
-          Sou uma pessoa movida por desafios e oportunidades, pois acredito que cada experiência é uma forma de aprendizado e crescimento.
-
-          Em 2021, mergulhei no universo da programação sem ter contato prévio com a área. Enfrentei obstáculos, persisti e, em 2022, concluí o curso Web Full Stack Node na Digital House, em parceria com o Programadores do Amanhã. Assim como também me formei no ensino médio no mesmo ano.
-          
-          Durante essa jornada, desenvolvi habilidades em JavaScript, HTML, CSS, Banco de Dados e iniciei meu aprendizado em React. Esse processo fortaleceu minhas hard skills e consolidou minha paixão pela tecnologia. Já para aperfeiçoar minhas soft skills tive muita ajuda da minha mentora durante todo o curso e após ele também.
-          
-          Em 2023, atuei como jovem aprendiz (fora da área de TI) em uma startup que aumentou bastande meu networking e minhas habilidades de comunicação. 
-          No início de 2024, conquistei meu primeiro estágio na área que sempre quis entrar e foi no Banco Inter, onde entrei para atuar como desenvolvedora back-end mas não foi o mar de rosas que imaginei, por isso acabei migrando para a área de sustentação, mas sem deixar de sair da TI, onde pude aplicar meus conhecimentos e ganhar experiência prática. Agora em setembro de 2025, fui efetivada e atuo no cargo de Tech Assistant, contribuindo diretamente para as operações e sustentação na área de TI.</p>
-      </section>
-
-      <section id="projetos" aria-labelledby="titulo-projetos">
-        <h2 id="titulo-projetos">Projetos</h2>
-
-        <article>
-            <h3>Projeto Integrador Langglow - Programadores do Amanhã</h3>
-          <p>
-            O projeto consistia em criar uma loja virtual completa, para a finalização do curso. Foi feito por uma equipe de cinco pessoas todas mulheres, e apelidamos de Langglow um nome único que reune a primeira letra dos nomes das participantes do projeto. Fizemos tudo do zero, o desenho das páginas no figma, a estrutura do banco de dados e tanto o backend e o frontend do projeto, além de criar uma conta no instagram para a lojinha.
-          </p>
-          <p>
-            <a href="https://github.com/LalaGomes/0721-pi-grupo-2" rel="noopener">Ver no GitHub</a>
-          </p>
-        </article>
-              <section id="contato" aria-labelledby="titulo-contato">
+          <a href="https://github.com/LalaGomes/0721-pi-grupo-2" rel="noopener">Ver no GitHub</a>
+        </p>
+      </article>
+      <section id="contato" aria-labelledby="titulo-contato">
         <h2 id="titulo-contato">Contato</h2>
 
         <address>
@@ -66,20 +97,23 @@
           <p>GitHub: <a href="#" rel="noopener">https://github.com/LalaGomes</a></p>
         </address>
       </section>
-    </main>
+  </main>
 
-    <footer>
-      <p>
-        &copy; <span id="ano-atual">2025</span> Lara gomes. Todos os direitos reservados.
-      </p>
-      <nav aria-label="Links do rodapé">
-        <ul>
-          <li><a href="#apresentacao">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
+  <footer>
+    <p>
+      &copy; <span id="ano-atual">2025</span> Lara Gomes. Todos os direitos reservados.
+    </p>
+    <nav aria-label="Links do rodapé">
+      <ul>
+        <li><a href="#apresentacao">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

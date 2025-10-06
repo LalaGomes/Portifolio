@@ -40,6 +40,35 @@ header div a {
   text-decoration: none;
 }
 
+/* ===== Foto e nome no cabeçalho ===== */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.foto-menu {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #D9CFFF;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-menu:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+header strong {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+
 nav ul {
   list-style: none;
   display: flex;
@@ -68,6 +97,16 @@ main {
   margin-right: auto;
   padding: 2rem;
 }
+
+/* .foto-perfil {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #D9CFFF;
+} */
+
 
 #apresentacao {
   text-align: center;
@@ -112,6 +151,36 @@ main {
     padding: 0 3rem;
   }
 }
+
+/* ===== Habilidades ===== */
+
+#habilidades {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+#habilidades h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #5345A3;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.lista-habilidades {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.lista-habilidades li {
+  background-color: #E9E5FA;
+  margin: 0.5rem auto;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
 
 /* ===== Projetos ===== */
 #projetos h2 {
@@ -236,6 +305,16 @@ footer a:hover {
   #projetos h3 {
     font-size: 1.5rem;
   }
+
+  #habilidades h2 {
+  font-size: 2rem;
+}
+
+.grade-habilidades {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
 }
 
 
@@ -255,6 +334,12 @@ footer a:hover {
     gap: 1rem;
     flex-wrap: wrap;
   }
+  
+  .foto-menu {
+  width: 35px;
+  height: 35px;
+}
+
 
   /* ===== Principal ===== */
   main {
@@ -284,6 +369,16 @@ footer a:hover {
     padding: 0;
   }
 
+  #habilidades h2 {
+  font-size: 2rem;
+}
+
+.grade-habilidades {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+
   /* ===== Projetos ===== */
   #projetos h2 {
     font-size: 2rem;
@@ -299,4 +394,18 @@ footer a:hover {
   #contato h2 {
     font-size: 2rem;
   }
+}
+
+
+
+/* ===== Animações de entrada ===== */
+.invisivel {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visivel {
+  opacity: 1;
+  transform: translateY(0);
 }
