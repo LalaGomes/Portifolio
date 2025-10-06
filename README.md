@@ -16,7 +16,7 @@ Este portfólio foi desenvolvido como parte da **Prática 05** do curso, com o o
 - Atualização automática do ano no rodapé  
 
 ## 🌈 Acesse o site publicado
-👉 [Clique aqui para visitar o portfólio](https://seuusuario.github.io/portfolio)
+👉 [Clique aqui para visitar o portfólio](https://lalagomes.github.io/Portifolio/)
 
 ## 👩‍💻 Autora
 **Lara Lays Gomes de Jesus**  
