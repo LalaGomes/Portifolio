@@ -65,7 +65,7 @@
     <section id="habilidades" aria-labelledby="titulo-habilidades">
       <h2 id="titulo-habilidades">Habilidades & Tecnologias</h2>
       <ul class="lista-habilidades">
-        <li><strong>Linguagens:</strong> JavaScript, HTML, CSS</li>
+        <li><strong>Linguagens:</strong> Java, Python, JavaScript, HTML, CSS</li>
         <li><strong>Frameworks:</strong> Node.js, React (básico)</li>
         <li><strong>Banco de Dados:</strong> MySQL</li>
         <li><strong>Soft Skills:</strong> Comunicação, Trabalho em equipe, Resiliência</li>
@@ -89,14 +89,34 @@
         </p>
       </article>
       <section id="contato" aria-labelledby="titulo-contato">
-        <h2 id="titulo-contato">Contato</h2>
+  <h2 id="titulo-contato">Envie uma mensagem!</h2>
 
-        <address>
-          <p>E-mail: <a href="mailto:lara.lays.bh6@gmail.com">lara.lays.bh6@gmail.com</a></p>
-          <p>LinkedIn: <a href="#" rel="noopener">www.linkedin.com/in/lara-lays-gomes</a></p>
-          <p>GitHub: <a href="#" rel="noopener">https://github.com/LalaGomes</a></p>
-        </address>
-      </section>
+  <form id="contact-form">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Assunto:</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Enviar Mensagem</button>
+
+    <p id="form-status" style="margin-top: 1rem; font-weight: 600;"></p>
+  </form>
+
+  <address style="margin-top: 2rem; padding: 0;">
+    <p>E-mail: <a href="mailto:lara.lays.bh6@gmail.com">lara.lays.bh6@gmail.com</a></p>
+    <p>LinkedIn: <a href="#" rel="noopener">www.linkedin.com/in/lara-lays-gomes</a></p>
+    <p>GitHub: <a href="#" rel="noopener">https://github.com/LalaGomes</a></p>
+  </address>
+</section>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </main>
 
   <footer>
